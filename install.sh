@@ -4,6 +4,7 @@ mkdir ~/.vim
 mkdir ~/.vim/colors
 mv -i .vim/colors/* ~/.vim/colors/
 mv -i .vimrc ~/
+mv -i .tmux.conf ~/
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
