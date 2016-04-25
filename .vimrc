@@ -1,8 +1,8 @@
 " Don't try to be vi compatible
 set nocompatible
 
-" Pathogen
-execute pathogen#infect()
+" Show tab indentation
+:set list lcs=tab:\|\ 
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
@@ -10,7 +10,8 @@ filetype off
 " Allow :e  (file explorer) to show nested directory structure
 let g:netrw_liststyle=3
 
-" TODO: Load plugins here (pathogen or vundle)
+" Pathogen (for plugins in .vim/bundle/*
+execute pathogen#infect()
 
 " Turn on syntax highlighting
 syntax on
