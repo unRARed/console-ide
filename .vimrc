@@ -10,14 +10,14 @@ filetype off
 " Allow :e  (file explorer) to show nested directory structure
 let g:netrw_liststyle=3
 
+" For plugins to load correctly
+filetype plugin indent on
+
 " Pathogen (for plugins in .vim/bundle/*
 execute pathogen#infect()
 
 " Turn on syntax highlighting
 syntax on
-
-" For plugins to load correctly
-filetype plugin indent on
 
 " TODO: Pick a leader key
 " let mapleader = ","
@@ -36,18 +36,6 @@ set visualbell
 
 " Encoding
 set encoding=utf-8
-
-" Whitespace
-set wrap
-set textwidth=79
-set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set noshiftround
-set autoindent
-set expandtab! 
-
 
 " Cursor motion
 set scrolloff=3
@@ -107,3 +95,24 @@ let g:solarized_termtrans=1
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 " in ~/.vim/colors/ and uncomment:
 colorscheme Sunburst
+
+" Whitespace
+set wrap
+set textwidth=79
+set formatoptions=tcqrn1
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set noshiftround
+set autoindent
+set smartindent
+set expandtab!
+set noexpandtab
+
+autocmd Filetype sass   set shiftwidth=2 tabstop=2 noexpandtab
+autocmd Filetype ruby   set shiftwidth=2 tabstop=2 noexpandtab
+autocmd Filetype html   set shiftwidth=2 tabstop=2 noexpandtab
+autocmd Filetype css    set shiftwidth=2 tabstop=2 noexpandtab
+autocmd Filetype slim   set shiftwidth=2 tabstop=2 noexpandtab
+autocmd Filetype yaml   set shiftwidth=2 tabstop=2 expandtab
+
