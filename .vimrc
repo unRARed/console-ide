@@ -106,13 +106,5 @@ set softtabstop=2
 set noshiftround
 set autoindent
 set smartindent
-set expandtab!
-set noexpandtab
-
-autocmd Filetype sass   set shiftwidth=2 tabstop=2 noexpandtab
-autocmd Filetype ruby   set shiftwidth=2 tabstop=2 noexpandtab
-autocmd Filetype html   set shiftwidth=2 tabstop=2 noexpandtab
-autocmd Filetype css    set shiftwidth=2 tabstop=2 noexpandtab
-autocmd Filetype slim   set shiftwidth=2 tabstop=2 noexpandtab
-autocmd Filetype yaml   set shiftwidth=2 tabstop=2 expandtab
+set expandtab
 
