@@ -98,7 +98,9 @@ colorscheme Sunburst
 
 " Whitespace
 set wrap
-set textwidth=79
+set linebreak
+set nolist  " list disables linebreak
+set textwidth=0
 set formatoptions=tcqrn1
 set tabstop=2
 set shiftwidth=2
