@@ -14,14 +14,12 @@ git clone git://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
 git clone git@github.com:Yggdroot/indentLine.git ~/.vim/bundle/indent-line
 git clone git://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
 
-# Setup tmux 
+# Setup tmux
 
 wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.bash
 mkdir ~/.bin
 mv tmuxinator.bash ~/.bin/
 mv -i .tmux.conf ~/
 gem install tmuxinator
-echo "source ~/.bin/tmuxinator.bash" >> ~/.bashrc
-echo "export EDITOR='vim'" >> ~/.bashrc
-echo "tmux attach || tmux new" >> ~/.bashrc
+cat .append_bashrc >> ~/.bashrc
 source ~/.bashrc

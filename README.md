@@ -1,11 +1,14 @@
 Vim/Tmux Config
-==============
+===============
 
-This is a script that will drop in my `.vimrc` and `.tmux.conf` to `~/` and pull down my VIM
-plugins from the respective repos into `~/.vim/bundles/`.
+Assumes `*NIX` system and prior installation of `vim` and `tmux`.
 
-Custom Configuration
---------------------
+* Adds preconfigured `.vimrc` and `.tmux.conf` files to `$USER` home directory.
+* Clones plugin repos into `~/.vim/bundles/`.
+* Appends script into `~/.bashrc` splitting console to 4 panes (for dev).
 
-Tmux key combo rebinded to `Ctrl->a`.
+Gotchas
+-------
 
+* Tmux key combo rebinded to `Ctrl->a`.
+* If "updating", will need to edit `~/.bashrc` manually.

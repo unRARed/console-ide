@@ -1,0 +1,30 @@
+export EDITOR='vim'
+
+COUNT=$(tmux list-panes | wc -l)
+# Create initial tmux session
+# if we don't already have one
+if ! [ -n "$TMUX" ]
+then
+	tmux new
+fi
+if [ $COUNT = 1 ]
+then
+	echo 'Primary Editor'
+	# Use entire left half of screen for Editing
+	tmux split-window -h
+elif [ $COUNT = 2 ]
+then
+	echo 'Secondary Editor'
+	# Use 40% of screen for Console/Server Debugging
+	tmux split-window -v -p 40
+elif [ $COUNT = 3 ]
+then
+	echo 'Primary Debugging'
+	# Split smaller pane 50/50 for Console/Server
+	tmux split-window -v -p 50
+elif [ $COUNT = 4 ]
+then
+	echo 'Secondary Debugging'
+fi
+
+source ~/.bin/tmuxinator.bash
