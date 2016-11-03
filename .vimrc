@@ -109,3 +109,7 @@ set noshiftround
 set autoindent
 set expandtab
 
+" Plugin customization
+
+let g:user_emmet_install_global = 0
+autocmd FileType html EmmetInstall " use Emmet only for HTML

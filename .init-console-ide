@@ -26,5 +26,3 @@ elif [ $COUNT = 4 ]
 then
 	echo 'Secondary Debugging'
 fi
-
-source ~/.bin/tmuxinator.bash
