@@ -70,6 +70,9 @@ set smartcase
 set showmatch
 map <leader><space> :let @/=''<cr> " clear search
 
+" know when violating 80 columns
+set cc=80
+
 " Remap help key.
 inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap <F1> :set invfullscreen<CR>
