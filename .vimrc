@@ -1,6 +1,10 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" no backspace/delete in Insert Mode
+:inoremap <BS> <Nop>
+:inoremap <Del> <Nop>
+
 " Show tab indentation
 :set list lcs=tab:\|\ 
 
