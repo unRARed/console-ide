@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Setup VIM
-
 mkdir ~/.vim
 mkdir ~/.vim/colors
 cp -i .vim/colors/* ~/.vim/colors/
@@ -12,6 +11,9 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 rm -Rf ~/.vim/bundle/vim-slim
 git clone git://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
+
+rm -Rf ~/.vim/bundle/vim-elixir
+git clone git://github.com/elixir-lang/vim-elixir.git ~/.vim/bundle/vim-elixir
 
 rm -Rf ~/.vim/bundle/indent-line
 git clone git://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indent-line
