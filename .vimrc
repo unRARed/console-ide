@@ -1,27 +1,25 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" Pathogen (for plugins in .vim/bundle/*
+execute pathogen#infect()
+" Turn on syntax highlighting
+syntax on
+" For plugins to load correctly
+filetype plugin indent on
+
 " no backspace/delete in Insert Mode
 :inoremap <BS> <Nop>
 :inoremap <Del> <Nop>
 
 " Show tab indentation
-:set list lcs=tab:\|\ 
+:set list lcs=tab:\|\
 
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
 " Allow :e  (file explorer) to show nested directory structure
 let g:netrw_liststyle=3
-
-" For plugins to load correctly
-filetype plugin indent on
-
-" Pathogen (for plugins in .vim/bundle/*
-execute pathogen#infect()
-
-" Turn on syntax highlighting
-syntax on
 
 " TODO: Pick a leader key
 " let mapleader = ","

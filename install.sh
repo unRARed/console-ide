@@ -15,6 +15,9 @@ git clone git://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
 rm -Rf ~/.vim/bundle/vim-elixir
 git clone git://github.com/elixir-lang/vim-elixir.git ~/.vim/bundle/vim-elixir
 
+rm -Rf ~/.vim/bundle/vim-slime-syntax
+git clone git@github.com:slime-lang/vim-slime-syntax.git ~/.vim/bundle/vim-slime-syntax
+
 rm -Rf ~/.vim/bundle/indent-line
 git clone git://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indent-line
 
