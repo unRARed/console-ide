@@ -16,12 +16,12 @@ elif [ $COUNT = 2 ]
 then
 	echo 'Secondary Editor'
 	# Use 40% of screen for Console/Server Debugging
-	tmux split-window -v -p 40
+	tmux split-window -v -p 30
 elif [ $COUNT = 3 ]
 then
 	echo 'Primary Debugging'
 	# Split smaller pane 50/50 for Console/Server
-	tmux split-window -v -p 50
+	tmux split-window -v -p 20
 elif [ $COUNT = 4 ]
 then
 	echo 'Secondary Debugging'
