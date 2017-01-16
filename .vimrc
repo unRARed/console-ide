@@ -8,6 +8,9 @@ syntax on
 " For plugins to load correctly
 filetype plugin indent on
 
+" Force some pesky syntax
+au BufReadPost *.slime set syntax=slime
+
 " no backspace/delete in Insert Mode
 :inoremap <BS> <Nop>
 :inoremap <Del> <Nop>
