@@ -35,4 +35,8 @@ cp -i .tmux.conf ~/
 # Install init script and reference from ~/.bashrc if not done so already
 cp -i .init-console-ide ~/
 grep -q -F 'source ~/.init-console-ide' ~/.bashrc || echo 'source ~/.init-console-ide' >> ~/.bashrc
+
+# Use VIM bindings from BASH
+echo 'set -o vi' >> ~/.bashrc
+
 source ~/.bashrc
