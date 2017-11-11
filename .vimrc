@@ -136,9 +136,9 @@ set autoindent
 set expandtab
 
 " Swap files suck
-set nobackup       # no backup files
-set nowritebackup  # no backup file while editing
-set noswapfile     # no swap files
+set nobackup       " no backup files
+set nowritebackup  " no backup file while editing
+set noswapfile     " no swap files
 
 " Plugin customization
 
