@@ -135,10 +135,13 @@ set noshiftround
 set autoindent
 set expandtab
 
-" Swap files suck
-set nobackup       " no backup files
-set nowritebackup  " no backup file while editing
-set noswapfile     " no swap files
+" auto indentation is shit
+filetype indent off
+
+" no swap
+set nobackup
+set nowritebackup
+set noswapfile
 
 " Plugin customization
 
