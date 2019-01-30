@@ -20,6 +20,9 @@ git clone https://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indent-line
 rm -Rf ~/.vim/bundle/emmet-vim
 git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
 
+# Specific plugins
+git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
+
 # Additional Syntax highlighting
 rm -Rf ~/.vim/bundle/vim-slim
 git clone https://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
