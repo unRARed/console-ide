@@ -21,6 +21,7 @@ rm -Rf ~/.vim/bundle/emmet-vim
 git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
 
 # Specific plugins
+rm -Rf ~/.vim/bundle/vim-rails
 git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
 
 # Additional Syntax highlighting

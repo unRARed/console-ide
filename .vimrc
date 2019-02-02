@@ -25,8 +25,9 @@ syntax on
 " Security
 set modelines=0
 
-" Show line numbers
-set number
+" Show hybrid relative line numbers!
+set number relativenumber
+set nu rnu
 
 " Show file stats
 set ruler
