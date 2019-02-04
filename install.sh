@@ -5,9 +5,12 @@ mkdir ~/.vim
 mkdir ~/.vim/colors
 cp -i .vim/colors/* ~/.vim/colors/
 cp -i .vimrc ~/
+cp -i .tmux.conf ~/
 
-if ! [ -x "$(command -v brew)" ]; then
-  brew install ag
+if [ -x "$(command -v brew)" ]; then
+  if ! [ -x "$(command -v ag)" ]; then
+    brew install ag
+  fi
 fi
 
 # Install Pathogen for Plugins
@@ -35,16 +38,3 @@ rm -Rf ~/.vim/bundle/vim-elixir
 git clone https://github.com/elixir-lang/vim-elixir.git ~/.vim/bundle/vim-elixir
 rm -Rf ~/.vim/bundle/vim-slime-syntax
 git clone https://github.com/slime-lang/vim-slime-syntax.git ~/.vim/bundle/vim-slime-syntax
-
-
-# Setup tmux
-cp -i .tmux.conf ~/
-
-# Install init script and reference from ~/.bashrc if not done so already
-cp -i .init-console-ide ~/
-grep -q -F 'source ~/.init-console-ide' ~/.bashrc || echo 'source ~/.init-console-ide' >> ~/.bashrc
-
-# Use VIM bindings from BASH
-echo 'set -o vi' >> ~/.bashrc
-
-source ~/.bashrc

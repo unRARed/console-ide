@@ -1,6 +1,13 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" Color scheme (terminal)
+set t_Co=256
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+colorscheme Sunburst
+
 " Show tab indentation
 :set list lcs=tab:\|\ 
 
@@ -65,6 +72,7 @@ set hidden
 
 " Rendering
 set ttyfast
+set lazyredraw
 
 " Status bar
 set laststatus=2
@@ -102,15 +110,6 @@ set listchars=tab:▸\ ,eol:¬
 " set list " To enable by default
 " Or use your leader key + l to toggle on/off
 map <leader>l :set list!<CR> " Toggle tabs and EOL
-
-" Color scheme (terminal)
-set t_Co=256
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
-" put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
-" in ~/.vim/colors/ and uncomment:
-colorscheme Sunburst
 
 " Fix copy/pasting from clipboard
 function! WrapForTmux(s)
