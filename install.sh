@@ -6,6 +6,10 @@ mkdir ~/.vim/colors
 cp -i .vim/colors/* ~/.vim/colors/
 cp -i .vimrc ~/
 
+if ! [ -x "$(command -v brew)" ]; then
+  brew install ag
+fi
+
 # Install Pathogen for Plugins
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
