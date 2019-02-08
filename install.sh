@@ -33,7 +33,7 @@ git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
 
 # Additional Syntax highlighting
 rm -Rf ~/.vim/bundle/vim-slim
-git clone https://github.com/slim-template/vim-slim.git ~/.vim/bundle/vim-slim
+git clone https://github.com/onemanstartup/vim-slim.git ~/.vim/bundle/vim-slim
 rm -Rf ~/.vim/bundle/vim-elixir
 git clone https://github.com/elixir-lang/vim-elixir.git ~/.vim/bundle/vim-elixir
 rm -Rf ~/.vim/bundle/vim-slime-syntax
