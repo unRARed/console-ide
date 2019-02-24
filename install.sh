@@ -26,8 +26,8 @@ rm -Rf ~/.vim/bundle/indent-line
 git clone https://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indent-line
 rm -Rf ~/.vim/bundle/emmet-vim
 git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
-
-# Specific plugins
+rm -Rf ~/.vim/bundle/ack.vim
+git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
 rm -Rf ~/.vim/bundle/vim-rails
 git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
 
