@@ -19,22 +19,31 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # Base plugins
 rm -Rf ~/.vim/bundle/vim-better-whitespace
-git clone https://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vim-better-whitespace
+git clone https://github.com/ntpeters/vim-better-whitespace \
+  ~/.vim/bundle/vim-better-whitespace
 rm -Rf ~/.vim/bundle/ctrlp.vim
-git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+git clone https://github.com/ctrlpvim/ctrlp.vim \
+  ~/.vim/bundle/ctrlp.vim
+rm -Rf ~/.vim/bundle/ctrlp-py-matcher
+git clone https://github.com/FelikZ/ctrlp-py-matcher \
+  ~/.vim/bundle/ctrlp-py-matcher
 rm -Rf ~/.vim/bundle/indent-line
-git clone https://github.com/Yggdroot/indentLine.git ~/.vim/bundle/indent-line
-rm -Rf ~/.vim/bundle/emmet-vim
-git clone https://github.com/mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
+git clone https://github.com/Yggdroot/indentLine \
+  ~/.vim/bundle/indent-line
 rm -Rf ~/.vim/bundle/ack.vim
-git clone https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack.vim
+git clone https://github.com/mileszs/ack.vim \
+  ~/.vim/bundle/ack.vim
 rm -Rf ~/.vim/bundle/vim-rails
-git clone https://github.com/tpope/vim-rails.git ~/.vim/bundle/vim-rails
+git clone https://github.com/tpope/vim-rails \
+  ~/.vim/bundle/vim-rails
 
 # Additional Syntax highlighting
 rm -Rf ~/.vim/bundle/vim-slim
-git clone https://github.com/onemanstartup/vim-slim.git ~/.vim/bundle/vim-slim
+git clone https://github.com/onemanstartup/vim-slim.git \
+  ~/.vim/bundle/vim-slim
 rm -Rf ~/.vim/bundle/vim-elixir
-git clone https://github.com/elixir-lang/vim-elixir.git ~/.vim/bundle/vim-elixir
+git clone https://github.com/elixir-lang/vim-elixir.git \
+  ~/.vim/bundle/vim-elixir
 rm -Rf ~/.vim/bundle/vim-slime-syntax
-git clone https://github.com/slime-lang/vim-slime-syntax.git ~/.vim/bundle/vim-slime-syntax
+git clone https://github.com/slime-lang/vim-slime-syntax.git \
+  ~/.vim/bundle/vim-slime-syntax

@@ -1,6 +1,9 @@
 " Don't try to be vi compatible
 set nocompatible
 
+" Use legacy regex engine for performance
+set regexpengine=1
+
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
@@ -29,6 +32,8 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
   let g:ackprg = 'ag --vimgrep'
 
+  " persist ctrlp cache...
+  let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
@@ -45,9 +50,11 @@ syntax on
 " Security
 set modelines=0
 
-" Show hybrid relative line numbers!
-set number relativenumber
-set nu rnu
+" Hybrid relative line numbers!
+" (disabled due to bad performance on budget, mid14/15 macbooks)
+" set number relativenumber
+" set nu rnu
+set number
 
 " Show file stats
 set ruler
