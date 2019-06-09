@@ -4,8 +4,8 @@ Console IDE
 Code exclusively from the console!
 
 * Changes binding of tmux activation key to `Ctrl->a`.
-* Changes default color scheme to Sunburst via
-  `~/.vim/colors/Sunburst.vim`
+* Changes default color scheme to synthetic via
+  `~/.vim/colors/synthetic.vim`
 * Adds preconfigured `.vimrc` and `.tmux.conf` files to current user’s
   home directory.
 * Clones vim plugin repos into `~/.vim/bundles/`.
@@ -27,7 +27,8 @@ of various things I'm picking up (and probably forgetting) over time.
 ### Autocomplete
 
 * Press `ctrl+n` while in insert mode
-* Continue pressing `ctrl+n` to cycle between suggestions
+* Continue pressing `ctrl+n` to cycle between sugg
+* Continue pressing `ctrl+n` to cycle between suggu
 
 ### Find, replace (or skip)
 
@@ -54,3 +55,7 @@ Press `[line number]` then `G`
 ### Jump to line
 
 Press `[line number]` then `G`
+
+### NetRW (File Explorer)
+
+[See this blog post](https://blog.stevenocchipinti.com/2016/12/28/using-netrw-instead-of-nerdtree-for-vim/)

@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # Setup VIM Configuration files
-mkdir ~/.vim
-mkdir ~/.vim/colors
-cp -i .vim/colors/* ~/.vim/colors/
-cp -i .vimrc ~/
-cp -i .tmux.conf ~/
+rm -Rf ~/.vim
+mkdir -p ~/.vim/colors
+yes | cp -i .vimrc ~/
+yes | cp -i .tmux.conf ~/
 
 if [ -x "$(command -v brew)" ]; then
   if ! [ -x "$(command -v ag)" ]; then
@@ -17,7 +16,15 @@ fi
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-# Base plugins
+# Color Schemes
+git clone https://github.com/sickill/vim-sunburst ~/.vim/sunburst
+mv ~/.vim/sunburst/colors/* ~/.vim/colors
+rm -Rf ~/.vim/sunburst
+git clone https://github.com/semibran/vim-colors-synthetic ~/.vim/synthetic
+mv ~/.vim/synthetic/colors/* ~/.vim/colors
+rm -Rf ~/.vim/synthetic
+
+# Plugins
 rm -Rf ~/.vim/bundle/vim-better-whitespace
 git clone https://github.com/ntpeters/vim-better-whitespace \
   ~/.vim/bundle/vim-better-whitespace

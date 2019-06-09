@@ -4,12 +4,13 @@ set nocompatible
 " Use legacy regex engine for performance
 set regexpengine=1
 
-" Color scheme (terminal)
+" Color scheme
 set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-colorscheme Sunburst
+" colorscheme Sunburst
+colorscheme synthetic
 
 " Show tab indentation
 :set list lcs=tab:\|\ 
@@ -17,8 +18,15 @@ colorscheme Sunburst
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" Allow :e  (file explorer) to show nested directory structure
+" NetRW File Explorer
+
+" Show nested directory structure
 let g:netrw_liststyle=3
+" Hide (mostly) useless header info
+let g:netrw_banner=0
+" Hide some files
+let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+,\(^\|\s\s\)ntuser\.\S\+'
+autocmd FileType netrw set nolist
 
 " For plugins to load correctly
 filetype plugin indent on
@@ -60,7 +68,8 @@ set number
 set ruler
 
 " Blink cursor on error instead of beeping (grr)
-set visualbell
+set visualbell t_vb=    " turn off error beep/flash
+set novisualbell        " turn off visual bell
 
 " Encoding
 set encoding=utf-8
@@ -77,6 +86,10 @@ nnoremap k gk
 
 " Allow hidden buffers
 set hidden
+" Cycle between buffers with Ctrl+j/k
+nnoremap <C-j> :bprev<CR>
+nnoremap <C-k> :bnext<CR>
+
 
 " Rendering
 set ttyfast
