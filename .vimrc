@@ -153,6 +153,11 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+" Extension-specific tweaks
+
+" Disable quote concealing in JSON files
+let g:vim_json_conceal=0
+
 " Plugin customization
 
 let g:user_emmet_install_global = 0
