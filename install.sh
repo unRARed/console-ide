@@ -54,3 +54,6 @@ git clone https://github.com/elixir-lang/vim-elixir.git \
 rm -Rf ~/.vim/bundle/vim-slime-syntax
 git clone https://github.com/slime-lang/vim-slime-syntax.git \
   ~/.vim/bundle/vim-slime-syntax
+rm -Rf ~/.vim/bundle/dart-vim-plugin
+git clone https://github.com/dart-lang/dart-vim-plugin.git \
+  ~/.vim/bundle/dart-vim-plugin
