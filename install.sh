@@ -25,6 +25,9 @@ mv ~/.vim/synthetic/colors/* ~/.vim/colors
 rm -Rf ~/.vim/synthetic
 
 # Plugins
+rm -Rf ~/.vim/bundle/vim-startify
+git clone https://github.com/mhinz/vim-startify \
+  ~/.vim/bundle/vim-startify
 rm -Rf ~/.vim/bundle/vim-better-whitespace
 git clone https://github.com/ntpeters/vim-better-whitespace \
   ~/.vim/bundle/vim-better-whitespace
