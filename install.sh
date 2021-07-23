@@ -25,6 +25,10 @@ mv ~/.vim/synthetic/colors/* ~/.vim/colors
 rm -Rf ~/.vim/synthetic
 
 # Plugins
+#
+rm -Rf ~/.vim/bundle/vim-better-sml
+git clone https://github.com/jez/vim-better-sml \
+  ~/.vim/bundle/vim-better-sml
 rm -Rf ~/.vim/bundle/vim-startify
 git clone https://github.com/mhinz/vim-startify \
   ~/.vim/bundle/vim-startify
