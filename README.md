@@ -10,25 +10,23 @@ Code exclusively from the console!
   home directory.
 * Clones vim plugin repos into `~/.vim/bundles/`.
 
-
 Installation
 ------------
 
 **Assuming dependencies have been satisfied, simply run `./install.sh`
 from the Repo root.**
 
-
 VIM Tips & Tricks
 -----------------
 
 This is in no way meant to be a complete reference, but rather a collection
-of various things I'm picking up (and probably forgetting) over time.
+of various things I'm picking up (and ~probably~ absolutely forgetting) over
+time.
 
 ### Autocomplete
 
-* Press `ctrl+n` while in insert mode
-* Continue pressing `ctrl+n` to cycle between sugg
-* Continue pressing `ctrl+n` to cycle between suggu
+* Press `ctrl+p` or `ctrl+n` while in insert mode.
+* Continue pressing either to cycle up/down through suggestions.
 
 ### Find, replace (or skip)
 
@@ -55,6 +53,14 @@ Press `[line number]` then `G`
 ### Jump to line
 
 Press `[line number]` then `G`
+
+### Add block comment
+
+Define a selection with `shift+v` then press `gc`.
+
+### Scroll while in `:term` mode
+
+Press `ctrl+w` followed by `shift+n`. Leave this state with `i`.
 
 ### NetRW (File Explorer)
 

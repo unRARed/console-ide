@@ -24,9 +24,9 @@ git clone https://github.com/semibran/vim-colors-synthetic ~/.vim/synthetic
 mv ~/.vim/synthetic/colors/* ~/.vim/colors
 rm -Rf ~/.vim/synthetic
 
-#############
-## Plugins ##
-#############
+######################
+## Plugins - Global ##
+######################
 
 # Block comments, see https://github.com/tpope/vim-commentary
 rm -Rf ~/.vim/bundle/vim-commentary
@@ -51,20 +51,26 @@ rm -Rf ~/.vim/bundle/ctrlp-py-matcher
 git clone https://github.com/FelikZ/ctrlp-py-matcher \
   ~/.vim/bundle/ctrlp-py-matcher
 
-
+# Visual indication of inconsistent indentation
 rm -Rf ~/.vim/bundle/indent-line
 git clone https://github.com/Yggdroot/indentLine \
   ~/.vim/bundle/indent-line
-rm -Rf ~/.vim/bundle/ack.vim
-git clone https://github.com/mileszs/ack.vim \
-  ~/.vim/bundle/ack.vim
+
+# Grep (find within files) replacement
+rm -Rf ~/.vim/bundle/vim-ripgrep
+# Temp fix for ngrep errors
+#      see: https://github.com/jremmen/vim-ripgrep/issues/57
+# git clone https://github.com/jremmen/vim-ripgrep \
+git clone --branch patch-1 https://github.com/lamchau/vim-ripgrep.git
+  ~/.vim/bundle/vim-ripgrep
+
+##########################
+## Plugins - Contextual ##
+##########################
+
 rm -Rf ~/.vim/bundle/vim-rails
 git clone https://github.com/tpope/vim-rails \
   ~/.vim/bundle/vim-rails
-
-#######################
-## Language-specific ##
-#######################
 rm -Rf ~/.vim/bundle/vim-better-sml
 git clone https://github.com/jez/vim-better-sml \
   ~/.vim/bundle/vim-better-sml

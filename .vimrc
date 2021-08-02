@@ -69,19 +69,19 @@ augroup vimbettersml
 augroup END
 
 
-" Speed up CTRLP plugin
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ackprg = 'ag --vimgrep'
+" Speed up CTRLP plugin using ripgrep (if we have it installed)
+if executable('rg')
+  set grepprg=rg\ --color=never
 
   " persist ctrlp cache...
   let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+  " Use ripgrep in CtrlP for listing files.
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
+else
+  let g:ctrlp_clear_cache_on_exit = 0
 endif
 
 " Turn on syntax highlighting
