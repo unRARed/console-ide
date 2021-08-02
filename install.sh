@@ -24,23 +24,34 @@ git clone https://github.com/semibran/vim-colors-synthetic ~/.vim/synthetic
 mv ~/.vim/synthetic/colors/* ~/.vim/colors
 rm -Rf ~/.vim/synthetic
 
-# Plugins
-#
-rm -Rf ~/.vim/bundle/vim-better-sml
-git clone https://github.com/jez/vim-better-sml \
-  ~/.vim/bundle/vim-better-sml
+#############
+## Plugins ##
+#############
+
+# Block comments, see https://github.com/tpope/vim-commentary
+rm -Rf ~/.vim/bundle/vim-commentary
+git clone https://github.com/tpope/vim-commentary \
+  ~/.vim/bundle/vim-commentary
+
+# Better start buffer
 rm -Rf ~/.vim/bundle/vim-startify
 git clone https://github.com/mhinz/vim-startify \
   ~/.vim/bundle/vim-startify
+
+# Highlights (likely) unnecessary whitespace in buffer (and other tools)
 rm -Rf ~/.vim/bundle/vim-better-whitespace
 git clone https://github.com/ntpeters/vim-better-whitespace \
   ~/.vim/bundle/vim-better-whitespace
+
+# Fuzzy file finder with Ctrl->p
 rm -Rf ~/.vim/bundle/ctrlp.vim
 git clone https://github.com/ctrlpvim/ctrlp.vim \
   ~/.vim/bundle/ctrlp.vim
 rm -Rf ~/.vim/bundle/ctrlp-py-matcher
 git clone https://github.com/FelikZ/ctrlp-py-matcher \
   ~/.vim/bundle/ctrlp-py-matcher
+
+
 rm -Rf ~/.vim/bundle/indent-line
 git clone https://github.com/Yggdroot/indentLine \
   ~/.vim/bundle/indent-line
@@ -51,7 +62,12 @@ rm -Rf ~/.vim/bundle/vim-rails
 git clone https://github.com/tpope/vim-rails \
   ~/.vim/bundle/vim-rails
 
-# Additional Syntax highlighting
+#######################
+## Language-specific ##
+#######################
+rm -Rf ~/.vim/bundle/vim-better-sml
+git clone https://github.com/jez/vim-better-sml \
+  ~/.vim/bundle/vim-better-sml
 rm -Rf ~/.vim/bundle/vim-slim
 git clone https://github.com/onemanstartup/vim-slim.git \
   ~/.vim/bundle/vim-slim
