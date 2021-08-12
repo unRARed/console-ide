@@ -61,7 +61,7 @@ rm -Rf ~/.vim/bundle/vim-ripgrep
 # Temp fix for ngrep errors
 #      see: https://github.com/jremmen/vim-ripgrep/issues/57
 # git clone https://github.com/jremmen/vim-ripgrep \
-git clone --branch patch-1 https://github.com/lamchau/vim-ripgrep.git
+git clone --branch patch-1 https://github.com/lamchau/vim-ripgrep.git \
   ~/.vim/bundle/vim-ripgrep
 
 ##########################
@@ -71,6 +71,9 @@ git clone --branch patch-1 https://github.com/lamchau/vim-ripgrep.git
 rm -Rf ~/.vim/bundle/vim-rails
 git clone https://github.com/tpope/vim-rails \
   ~/.vim/bundle/vim-rails
+rm -Rf ~/.vim/bundle/vim-coffee-script
+git clone https://github.com/kchmck/vim-coffee-script \
+  ~/.vim/bundle/vim-coffee-script
 rm -Rf ~/.vim/bundle/vim-better-sml
 git clone https://github.com/jez/vim-better-sml \
   ~/.vim/bundle/vim-better-sml
