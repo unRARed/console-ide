@@ -88,6 +88,7 @@ endif
 syntax on
 
 autocmd BufNewFile,BufRead *.eliom set syntax=ocaml
+autocmd BufNewFile,BufRead *.re set syntax=rescript
 
 " TODO: Pick a leader key
 " let mapleader = ","

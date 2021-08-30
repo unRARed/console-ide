@@ -68,6 +68,9 @@ git clone --branch patch-1 https://github.com/lamchau/vim-ripgrep.git \
 ## Plugins - Contextual ##
 ##########################
 
+rm -Rf ~/.vim/bundle/vim-rescript
+git clone https://github.com/rescript-lang/vim-rescript \
+  ~/.vim/bundle/vim-rescript
 rm -Rf ~/.vim/bundle/vim-rails
 git clone https://github.com/tpope/vim-rails \
   ~/.vim/bundle/vim-rails
