@@ -38,6 +38,11 @@ rm -Rf ~/.vim/bundle/vim-startify
 git clone https://github.com/mhinz/vim-startify \
   ~/.vim/bundle/vim-startify
 
+# Better NetRW (Vinegar)
+rm -Rf ~/.vim/bundle/vinegar
+git clone https://github.com/tpope/vim-vinegar \
+  ~/.vim/bundle/vinegar
+
 # Highlights (likely) unnecessary whitespace in buffer (and other tools)
 rm -Rf ~/.vim/bundle/vim-better-whitespace
 git clone https://github.com/ntpeters/vim-better-whitespace \

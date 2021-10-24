@@ -20,6 +20,8 @@ filetype off
 
 " NetRW File Explorer
 
+" Keep the current directory and browsing directory synced
+let g:netrw_keepdir = 0
 " Show nested directory structure
 let g:netrw_liststyle=3
 " Hide (mostly) useless header info
