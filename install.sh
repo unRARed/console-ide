@@ -97,3 +97,19 @@ git clone https://github.com/slime-lang/vim-slime-syntax.git \
 rm -Rf ~/.config/nvim/bundle/dart-vim-plugin
 git clone https://github.com/dart-lang/dart-vim-plugin.git \
   ~/.config/nvim/bundle/dart-vim-plugin
+rm -Rf ~/.config/nvim/bundle/vim-mint
+git clone https://github.com/IrenejMarc/vim-mint.git \
+  ~/.config/nvim/bundle/vim-mint
+
+########################
+## Plugins - Optional ##
+########################
+#
+YES='^([yY][eE][sS]|[yY])+$'
+
+read -r -p "Install Github Copilot? [y/N] " response
+if [[ "$response" =~ $YES ]]
+then
+  git clone https://github.com/github/copilot.vim.git \
+    ~/.config/nvim/bundle/copilot.vim
+fi
