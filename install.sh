@@ -97,3 +97,9 @@ git clone https://github.com/slime-lang/vim-slime-syntax.git \
 rm -Rf ~/.vim/bundle/dart-vim-plugin
 git clone https://github.com/dart-lang/dart-vim-plugin.git \
   ~/.vim/bundle/dart-vim-plugin
+rm -Rf ~/.vim/bundle/elm-vim
+git clone https://github.com/elmcast/elm-vim.git \
+  ~/.vim/bundle/elm-vim
+rm -Rf ~/.vim/bundle/ale
+git clone https://github.com/dense-analysis/ale.git \
+  ~/.vim/bundle/ale
