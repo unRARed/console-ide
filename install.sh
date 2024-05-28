@@ -103,3 +103,6 @@ git clone https://github.com/elmcast/elm-vim.git \
 rm -Rf ~/.vim/bundle/ale
 git clone https://github.com/dense-analysis/ale.git \
   ~/.vim/bundle/ale
+rm -Rf ~/.vim/bundle/copilot
+git clone https://github.com/github/copilot.vim.git \
+  ~/.vim/bundle/copilot.vim
