@@ -106,3 +106,14 @@ git clone https://github.com/dense-analysis/ale.git \
 rm -Rf ~/.vim/bundle/copilot
 git clone https://github.com/github/copilot.vim.git \
   ~/.vim/bundle/copilot.vim
+
+# JavaScript and TypeScript / Next.js
+rm -Rf ~/.vim/bundle/vim-javascript
+git clone https://github.com/pangloss/vim-javascript.git \
+  ~/.vim/bundle/vim-javascript
+rm -Rf ~/.vim/bundle/typescript-vim
+git clone https://github.com/leafgarland/typescript-vim.git \
+  ~/.vim/bundle/typescript-vim
+rm -Rf ~/.vim/bundle/vim-jsx-typescript
+git clone https://github.com/peitalin/vim-jsx-typescript.git \
+  ~/.vim/bundle/vim-jsx-typescript
