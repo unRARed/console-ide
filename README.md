@@ -64,4 +64,8 @@ Press `ctrl+w` followed by `shift+n`. Leave this state with `i`.
 
 ### NetRW (File Explorer)
 
+* Use `:e .` to open the file explorer.
+* Press `d` to create a new directory.
+* Press `%` to create a new file.
+
 [See this blog post](https://blog.stevenocchipinti.com/2016/12/28/using-netrw-instead-of-nerdtree-for-vim/)
