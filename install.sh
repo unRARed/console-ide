@@ -91,12 +91,6 @@ git clone https://github.com/onemanstartup/vim-slim.git \
 rm -Rf ~/.vim/bundle/vim-elixir
 git clone https://github.com/elixir-lang/vim-elixir.git \
   ~/.vim/bundle/vim-elixir
-rm -Rf ~/.vim/bundle/vim-slime-syntax
-git clone https://github.com/slime-lang/vim-slime-syntax.git \
-  ~/.vim/bundle/vim-slime-syntax
-rm -Rf ~/.vim/bundle/dart-vim-plugin
-git clone https://github.com/dart-lang/dart-vim-plugin.git \
-  ~/.vim/bundle/dart-vim-plugin
 rm -Rf ~/.vim/bundle/elm-vim
 git clone https://github.com/elmcast/elm-vim.git \
   ~/.vim/bundle/elm-vim
